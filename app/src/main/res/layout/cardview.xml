@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#000"
+
+    android:layout_height="190dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:id="@+id/cardview_layout_background"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+
+            android:textSize="25sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/cardview_textview_name"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:id="@+id/cardview_textview_event"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:layout_marginTop="-5sp"
+
+            android:layout_marginStart="20sp"
+            android:layout_below="@id/cardview_textview_name"
+
+            />
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cardview_view_logo"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="25sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview_view_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+
+            android:textAllCaps="true"
+
+            android:letterSpacing=".05"
+            android:textStyle="bold"
+            android:id="@+id/cardview_textview_status"
+            android:textColor="#fff"
+            android:layout_marginTop="20sp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15sp"
+            android:textSize="10sp"
+            android:id="@+id/cardview_textview_dateandtime"
+            android:layout_centerHorizontal="true"
+
+            android:textAllCaps="true"
+
+            android:textColor="#fff"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

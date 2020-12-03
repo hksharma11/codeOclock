@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240644284009",
+    "firebase_url": "https://coder-s-clock.firebaseio.com",
+    "project_id": "coder-s-clock",
+    "storage_bucket": "coder-s-clock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240644284009:android:643b75ef90f626b16bccf8",
+        "android_client_info": {
+          "package_name": "com.e.codersclock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240644284009-b5uhti4q7i69v3d22qhmm65bv36m65vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_-45MZXabGmwkTK_tL29yEs7QyKto1JU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240644284009-b5uhti4q7i69v3d22qhmm65bv36m65vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

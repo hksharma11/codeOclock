@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".Contest_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:elevation="2dp"
+        android:id="@+id/toolbar"
+        android:background="#2C164C"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c o n t e s t  d e t a i l s"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        android:id="@+id/head2"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="50sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/contest_detail_view"
+            android:background="@drawable/codeforces"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Codeforces"
+            android:id="@+id/contest_detail_textview_name"
+            android:textColor="#E8E7E7"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Codeforces"
+            android:textColor="#E8E7E7"
+            android:id="@+id/contest_detail_textview_event"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="-5sp"
+            android:textAllCaps="true"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/timing"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/head2"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:elevation="2dp"
+            android:id="@+id/timing1"
+            android:background="#2C164C">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="t i m i n g s"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+
+                android:layout_centerInParent="true"
+                android:textSize="15sp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="09:30"
+            android:id="@+id/contest_detail_textview_start_time"
+            android:textColor="#E8E7E7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="14-NOV-2020"
+            android:id="@+id/contest_detail_textview_start_date"
+            android:textColor="#E8E7E7"
+            android:layout_marginTop="-5sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="09:30"
+            android:id="@+id/contest_detail_textview_end_time"
+            android:textColor="#E8E7E7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="14-NOV-2020"
+            android:textColor="#E8E7E7"
+            android:id="@+id/contest_detail_textview_end_date"
+            android:layout_marginTop="-5sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:elevation="2dp"
+            android:layout_marginTop="7sp"
+            android:id="@+id/timing2"
+            android:background="#2C164C">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="t i m i n g s"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+
+                android:layout_centerInParent="true"
+                android:textSize="15sp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#2C164C"
+            android:id="@+id/contest_detail_visit_url"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E8E7E7"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:text="Visit contest url"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#2C164C"
+            android:id="@+id/contest_details_set_in_app"
+            android:layout_marginTop="5sp"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E8E7E7"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:id="@+id/textview_of_set_in_app_reminder"
+                android:layout_centerInParent="true"
+                android:text="set in-app reminder"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#2C164C"
+            android:id="@+id/contest_details_add_to_calender"
+            android:layout_marginTop="5sp"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E8E7E7"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:text="add to google calendar"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

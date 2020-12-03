@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:id="@+id/RelativeLayout_main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:id="@+id/relativeSplash"
+        android:elevation="3sp"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/coderslogo"
+            android:layout_centerVertical="true"
+            android:id="@+id/rotatingimageview"
+            android:layout_height="50dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:elevation="2dp"
+        android:id="@+id/toolbar"
+        android:background="#261243"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c o d e  o ' c l o c k"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@id/bottomnav"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:paddingRight="35dp"
+            android:paddingTop="4dp"
+
+            android:paddingBottom="4dp"
+            android:paddingLeft="35dp"
+            android:id="@+id/banner_slider_view_pager"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:elevation="2dp"
+
+            android:id="@+id/second_heading"
+            android:layout_marginTop="190dp"
+            android:background="#261243"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="u p c o m i n g"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:id="@+id/heading_text"
+                android:layout_centerInParent="true"
+                android:textSize="15sp"
+                />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/upcoming_recycler"
+            android:layout_marginBottom="5sp"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@id/second_heading"
+            android:layout_height="wrap_content"
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/ongoing_recycler"
+            android:layout_marginBottom="5sp"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@id/second_heading"
+            android:layout_height="wrap_content"
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/linear_layout_about"
+            android:layout_below="@id/second_heading"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/coderslogo"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="code o'clock"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-thin"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Clock For Coders"
+                android:layout_marginTop="-5dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="created by harsh sharma"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="every single suggestions are welcome"
+
+                android:textColor="#fff"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram : @____sharma_____"
+                android:layout_marginTop="-5dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.linkedin.com/in/harsh-sharma-22ab98167"
+                android:layout_marginTop="-5dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hk.harshkumar11@gmail.com"
+                android:layout_marginTop="-5dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='" coding is the closest thing we have to a superpower "'
+                android:layout_marginTop="100dp"
+                android:textColor="#fff"
+                android:gravity="center"
+
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="2dp"
+        android:id="@+id/bottomnav"
+
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button2"
+
+
+        >
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/view_ongoing"
+            android:padding="25dp"
+            android:backgroundTint="#6B6770"
+            android:background="@drawable/ongoing"
+            android:layout_height="30dp"/>
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/tint"
+            android:id="@+id/view_upcoming"
+            android:background="@drawable/upcoming"
+            android:layout_height="30dp"/>
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/view_about"
+
+            android:background="@drawable/about"
+            android:layout_marginEnd="50sp"
+            android:layout_height="30dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

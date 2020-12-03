@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginStart="5sp"
+    android:id="@+id/relative_contest"
+    android:layout_marginEnd="5sp"
+    android:background="@drawable/button"
+    android:layout_height="wrap_content"
+
+    >
+
+    <View
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+
+        android:id="@+id/contest_logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contest_logo"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:id="@+id/contest_name"
+        android:textAllCaps="true"
+        android:text="codechef"
+        android:layout_marginStart="5sp"
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contest_logo"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:textAllCaps="true"
+        android:id="@+id/contest_event"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="ssec coding contest - 4"
+        android:layout_marginStart="5sp"
+        android:layout_below="@id/contest_name"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:text="10:00 - 23:00"
+
+        android:textSize="14sp"
+        android:id="@+id/contest_time"
+        android:textColor="#fff"
+
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:text="10/11/2020 - 11/11/2020"
+        android:textSize="14sp"
+
+        android:layout_below="@id/contest_time"
+        android:id="@+id/contest_date"
+        android:textColor="#fff"
+
+
+        />
+
+
+
+
+</RelativeLayout>
