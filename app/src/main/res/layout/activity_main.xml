@@ -13,7 +13,7 @@
         android:background="#000"
         android:id="@+id/relativeSplash"
         android:elevation="3sp"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_height="match_parent">
 
 
